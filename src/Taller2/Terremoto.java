@@ -18,25 +18,22 @@ public class Terremoto extends Consumo {
 
 	@Override
 	public double calcularKCal() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (litros*10)/3;
 	}
 
 	@Override
 	public String getTipo() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Terremoto";
 	}
 
 	@Override
 	public String toFileString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Terremoto" +  consumidor + ";" + litros + ";" + fecha;
 	}
 
 	@Override
 	public void mostrarDetalle(int index) {
-		// TODO Auto-generated method stub
+		System.out.println(" " + index +  " | " + consumidor + " | " + litros + " L | " + fecha + " | " + calcularKCal() + "kCal");
 		
 	}
 }

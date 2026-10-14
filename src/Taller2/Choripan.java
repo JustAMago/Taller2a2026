@@ -28,25 +28,22 @@ public class Choripan extends Consumo {
 
 	@Override
 	public double calcularKCal() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (largo*ancho)/3;
 	}
 
 	@Override
 	public String getTipo() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Choripan";
 	}
 
 	@Override
 	public String toFileString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Choripan" +  consumidor + ";" + largo + ";" + ancho + fecha;
 	}
 
 	@Override
 	public void mostrarDetalle(int index) {
-		// TODO Auto-generated method stub
+		System.out.println(" " + index + " | " + consumidor + " | " + largo + " cm | " + ancho +  " cm | " + fecha + " | " + calcularKCal() + " kCal");
 		
 	}
 }
