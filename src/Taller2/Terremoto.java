@@ -28,7 +28,7 @@ public class Terremoto extends Consumo {
 
 	@Override
 	public String toFileString() {
-		return "Terremoto" +  consumidor + ";" + litros + ";" + fecha;
+		return "Terremoto;" +  consumidor + ";" + litros + ";" + fecha;
 	}
 
 	@Override

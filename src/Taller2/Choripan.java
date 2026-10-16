@@ -38,7 +38,7 @@ public class Choripan extends Consumo {
 
 	@Override
 	public String toFileString() {
-		return "Choripan" +  consumidor + ";" + largo + ";" + ancho + fecha;
+		return "Choripan;" +  consumidor + ";" + largo + ";" + ancho + ";" + fecha;
 	}
 
 	@Override
